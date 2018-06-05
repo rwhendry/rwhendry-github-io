@@ -15,7 +15,7 @@ function NavButton(props){
 export default class Navbar extends React.Component{
     render(){
       return(
-        <ul class="navbar">
+        <ul class="navbar navbar-fixed-top">
           <Logo/>
           <NavButton name="Achievements" link="achievements"/>
           <NavButton name="Projects" link="projects"/>

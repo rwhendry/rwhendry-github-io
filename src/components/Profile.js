@@ -62,6 +62,9 @@ function Work(props){
   )
 }
 
+
+//  <Work image="kiloin" title="Kiloin.id" position="Part-Time Software Engineer" color="colgreen" time="February 2018 - Now" tags={tags.kiloin} box ={box.kiloin}/> //
+
 function WorkExperiences(){
   const tags = {
      iatoki : ["- Prepare some problems to select Indonesia high school students to participate in IOI","- Teach some subject for preparation in IOI"],
@@ -71,13 +74,12 @@ function WorkExperiences(){
    const box ={
      iatoki : ["Competitive Programming","C++","Algorithm","Data Structure"],
      kiloin : ["React","Django","REST-API","SQL","JSX"],
-     sirclo : ["Pipeline","Docker","Codeceptjs","PHP","Kubernetes","GCP"],
+     sirclo : ["Pipeline","Docker","Codeceptjs","PHP"],
    }
   return(
     <div className="container-fluid mar-top">
       <span className="fontsize32 underline"> <b> Work Experiences </b> </span>
       <Work image="iatoki" title="IA TOKI" position="Scientific Committee" color="colred" time="February 2018 - Now" tags={tags.iatoki} box={box.iatoki}/>
-      <Work image="kiloin" title="Kiloin.id" position="Part-Time Software Engineer" color="colgreen" time="February 2018 - Now" tags={tags.kiloin} box ={box.kiloin}/>
       <Work image="sirclo" title="Sirclo" position="Software Engineer Intern" color="colblue" link="https://www.sirclo.com/" time="January 2018 - February 2018" tags={tags.sirclo} box = {box.sirclo}/>
     </div>
   )

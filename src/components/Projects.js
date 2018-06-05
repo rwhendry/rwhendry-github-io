@@ -4,9 +4,6 @@ import './style.css'
 
 function Proj(props){
   const tags = props.tags;
-  const listItems = tags.map((tag) =>
-   <li className>{tag}</li>
-  );
   const box = props.box;
   const boxes = box.map((boxes) =><span className="box fontsize18 marleft"> {boxes} </span>  );
   return(
@@ -15,7 +12,9 @@ function Proj(props){
       <img src={require('./images/' + props.photo + '.jpg')} className="project-photo"/>
       <a href={props.link}>  <h2 className={`fontsize24 ${props.color}`}> <b> {props.title} </b> </h2> </a>
         <ul className="bgblack">
-          {listItems}
+          {tags.map((tag) =>
+           <li className>{tag}</li>
+          )}
         </ul>
         {boxes}
       </div>
@@ -36,7 +35,7 @@ function Pro(){
   };
   return(
     <div className="container-fluid middle mar-top">
-      <Proj title={projects.rwhendry.title} link = {projects.rwhendry.link} tags = {projects.rwhendry.tags} box = {projects.rwhendry.box} photo= {projects.rwhendry.photo} color = {projects.rwhendry.color}/>
+      <Proj {...projects.rwhendry}/>
      </div>
   )
 }
