@@ -34,7 +34,7 @@ function Pro(){
       },
       simpanpesan: {
         title: "Simpan Pesan (simpanpesan.herokuapp.com)",
-        link : "simpanpesan",
+        link : "simpanpesan.herokuapp.com",
         tags :["- A Saved Message Web"],
         box : ["Go", "React", "REST-API", "Gin", "Bootstrap", "Postgre"],
         photo: "savedmessage",
