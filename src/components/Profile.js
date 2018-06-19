@@ -21,7 +21,7 @@ function Education(){
           <h4> Undergraduate Computer Science Student </h4>
         </div>
         <div className="mar-top2 col-md-2">
-          <h4> June 2017-Now </h4>
+          <h4> June 2017 - Now </h4>
         </div>
       </div>
     </div>
@@ -70,19 +70,41 @@ function WorkExperiences(){
      iatoki : ["- Prepare some problems to select Indonesia high school students to participate in IOI","- Teach some subject for preparation in IOI"],
      kiloin : ["- Working as BackEnd Software Engineer from scratch using django"],
      sirclo : ["- Adding some feature using PHP","- Create end to end test","- Create pipeline to create automated end to end test"],
+     tokopedia:[""]
    };
    const box ={
      iatoki : ["Competitive Programming","C++","Algorithm","Data Structure"],
      kiloin : ["React","Django","REST-API","SQL","JSX"],
      sirclo : ["Pipeline","Docker","Codeceptjs","PHP"],
+     tokopedia:["Go","REST-API"]
+   }
+   const work={
+     tokopedia : {
+       image : "tokopedia",
+       title : "Tokopedia",
+       position: "Software Engineer Intern",
+       color :"colgreen",
+       link : "https://www.tokopedia.com/",
+       time : "June 2018 - Now",
+       tags : tags.tokopedia,
+       box  : box.tokopedia
+
+     }
    }
   return(
     <div className="container-fluid mar-top">
       <span className="fontsize32 underline"> <b> Work Experiences </b> </span>
-      <Work image="iatoki" title="IA TOKI" position="Scientific Committee" color="colred" time="February 2018 - Now" tags={tags.iatoki} box={box.iatoki}/>
+      <Work image="iatoki" title="IA TOKI" position="Scientific Committee" color="colred" time="February 2018 - May 2018" tags={tags.iatoki} box={box.iatoki}/>
       <Work image="sirclo" title="Sirclo" position="Software Engineer Intern" color="colblue" link="https://www.sirclo.com/" time="January 2018 - February 2018" tags={tags.sirclo} box = {box.sirclo}/>
+      <Work {...work.tokopedia}/>
     </div>
   )
+}
+
+function Cetrificate() {
+  const cetrificate = {
+
+  }
 }
 
 export default class Profile extends React.Component{

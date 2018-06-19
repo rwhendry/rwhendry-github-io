@@ -32,10 +32,19 @@ function Pro(){
         photo: "rwhendry1",
         color: "colwhite",
       },
+      simpanpesan: {
+        title: "Simpan Pesan (simpanpesan.herokuapp.com)",
+        link : "simpanpesan",
+        tags :["- A Saved Message Web"],
+        box : ["Go", "React", "REST-API", "Gin", "Bootstrap", "Postgre"],
+        photo: "savedmessage",
+        color : "colwhite",
+      }
   };
   return(
     <div className="container-fluid middle mar-top">
       <Proj {...projects.rwhendry}/>
+      <Proj {...projects.simpanpesan}/>
      </div>
   )
 }
