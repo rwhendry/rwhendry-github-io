@@ -42,7 +42,7 @@ function Pro(){
       },
       tictactoe: {
         title : "Tic Tac Toe (reygames.herokuapp.com)",
-        link : "https://reygames.herokuapp.com",
+        link : "https://reygames.herokuapp.com/tictactoe",
         tags : ["- A simple Tic Tac Toe made using React"],
         box : ["React", "Bootstrap", "JSX", "HTML", "CSS"],
         photo: "tictactoe",
