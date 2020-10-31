@@ -1,6 +1,6 @@
 How to use locally
 
-Requirements : npm
+Requirements : NPM
 
 ```
 cd portofolio
